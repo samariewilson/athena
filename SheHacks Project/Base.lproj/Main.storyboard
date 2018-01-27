@@ -55,14 +55,53 @@
                     <view key="view" contentMode="scaleToFill" id="9vr-8g-Spx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket-cart-icon-27" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-Wf-fbe">
+                                <rect key="frame" x="67" y="76" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-M2-efv">
+                                <rect key="frame" x="68" y="212" width="238" height="69"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-5w-Efv">
+                                <rect key="frame" x="45" y="488" width="284" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCo-0M-jl8">
+                                        <rect key="frame" x="-14" y="-4" width="313" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="Proceed to Checkout?">
+                                            <color key="titleColor" red="1" green="0.24629599360000001" blue="0.59229852199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.98421768147807442" blue="0.79302488836620699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hkg-M2-efv" firstAttribute="top" secondItem="Abz-Wf-fbe" secondAttribute="bottom" constant="8" id="3T1-dE-kB7"/>
+                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="top" secondItem="cF0-NB-49o" secondAttribute="top" constant="56" id="8b4-Ht-l8H"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="Abz-Wf-fbe" secondAttribute="trailing" constant="68" id="9op-DY-crt"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="4ef-5w-Efv" secondAttribute="trailing" constant="46" id="BJ3-h3-BxH"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="4ef-5w-Efv" secondAttribute="bottom" constant="82" id="Ejb-g0-6XE"/>
+                            <constraint firstItem="4ef-5w-Efv" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="45" id="YcA-fD-fw3"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="Abz-Wf-fbe" secondAttribute="bottom" constant="414" id="aF5-Sj-ZtW"/>
+                            <constraint firstItem="4ef-5w-Efv" firstAttribute="top" secondItem="hkg-M2-efv" secondAttribute="bottom" constant="207" id="bU3-7v-kRj"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="hkg-M2-efv" secondAttribute="bottom" constant="337" id="dqj-sF-EqZ"/>
+                            <constraint firstItem="hkg-M2-efv" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="68" id="i3P-1n-jPE"/>
+                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="67" id="nR0-yT-L6V"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="hkg-M2-efv" secondAttribute="trailing" constant="69" id="zJ1-hc-T6x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cF0-NB-49o"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Checkout" image="check-1" selectedImage="check-1" id="OQe-I5-9fu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-70-sQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="0.0"/>
+            <point key="canvasLocation" x="1632.8" y="-0.44977511244377816"/>
         </scene>
         <!--Home-->
         <scene sceneID="TbG-IE-5Ti">
@@ -272,6 +311,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="basket-cart-icon-27" width="1200" height="1200"/>
         <image name="check-1" width="25" height="25"/>
         <image name="glass-1" width="25" height="25"/>
         <image name="house-1" width="25" height="25"/>
