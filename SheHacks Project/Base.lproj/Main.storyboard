@@ -50,7 +50,7 @@
         <!--Checkout-->
         <scene sceneID="SPR-NE-7l1">
             <objects>
-                <viewController id="YV3-5k-HyX" sceneMemberID="viewController">
+                <viewController id="YV3-5k-HyX" customClass="CheckoutViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9vr-8g-Spx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <!--Home-->
         <scene sceneID="TbG-IE-5Ti">
             <objects>
-                <viewController id="7If-dv-DWO" sceneMemberID="viewController">
+                <viewController id="7If-dv-DWO" customClass="ThirdViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQH-eD-U9S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Settings-->
         <scene sceneID="El4-tb-KlE">
             <objects>
-                <viewController id="5k6-3m-gbt" sceneMemberID="viewController">
+                <viewController id="5k6-3m-gbt" customClass="SettingsViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gYc-yl-6z7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
