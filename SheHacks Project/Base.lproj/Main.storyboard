@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,13 +41,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Checkout-->
         <scene sceneID="SPR-NE-7l1">
             <objects>
                 <viewController id="YV3-5k-HyX" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                         <color key="backgroundColor" red="1" green="0.98421768147807442" blue="0.79302488836620699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="cF0-NB-49o"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="OQe-I5-9fu"/>
+                    <tabBarItem key="tabBarItem" title="Checkout" image="check-1" selectedImage="check-1" id="OQe-I5-9fu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-70-sQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +74,7 @@
                         <color key="tintColor" red="0.98633061769999997" green="0.95737788580000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ltr-8X-YiS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house-1" id="hzn-au-A6I">
+                    <tabBarItem key="tabBarItem" title="Home" image="house-1" selectedImage="house-1" id="hzn-au-A6I">
                         <color key="badgeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -113,16 +113,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Browse" image="glass-1" id="2Qd-b4-qhx">
-                        <color key="badgeColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Browse" image="glass-1" selectedImage="glass-1" id="2Qd-b4-qhx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="436"/>
         </scene>
-        <!--Checkout-->
+        <!--Settings-->
         <scene sceneID="El4-tb-KlE">
             <objects>
                 <viewController id="5k6-3m-gbt" sceneMemberID="viewController">
@@ -132,7 +130,7 @@
                         <color key="backgroundColor" red="1" green="0.92839074959064571" blue="0.92150581294692246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="c1Q-6E-rj4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Checkout" image="check-1" id="jU4-ga-TYD"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="jU4-ga-TYD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMh-A4-is8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
