@@ -38,8 +38,25 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold-star-clipart-no-background-MiLL8zB9T" translatesAutoresizingMaskIntoConstraints="NO" id="Dc5-iZ-Utt">
+                                <rect key="frame" x="105" y="-30" width="164" height="346"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no favorites!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-ov-vjo">
+                                <rect key="frame" x="101" y="246" width="188" height="17"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94057213804854456" green="1" blue="0.87441441570993694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Dc5-iZ-Utt" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="-50" id="8xM-xP-0wA"/>
+                            <constraint firstItem="OxL-ov-vjo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="BHI-xn-7mv"/>
+                            <constraint firstItem="OxL-ov-vjo" firstAttribute="top" secondItem="Dc5-iZ-Utt" secondAttribute="bottom" constant="-70" id="GZC-mi-k47"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="OxL-ov-vjo" secondAttribute="trailing" constant="86" id="iKP-Cj-9HZ"/>
+                            <constraint firstItem="Dc5-iZ-Utt" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="105" id="icS-g1-KdX"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Dc5-iZ-Utt" secondAttribute="trailing" constant="106" id="lMN-1L-c36"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
@@ -258,6 +275,7 @@
         <image name="basket-cart-icon-27" width="1200" height="1200"/>
         <image name="check-1" width="25" height="25"/>
         <image name="glass-1" width="25" height="25"/>
+        <image name="gold-star-clipart-no-background-MiLL8zB9T" width="347" height="346"/>
         <image name="house-1" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
     </resources>
