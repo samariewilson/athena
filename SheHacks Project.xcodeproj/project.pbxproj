@@ -18,7 +18,7 @@
 		7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3C201D33E20051411F /* ThirdViewController.swift */; };
 		7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3E201D34650051411F /* CheckoutViewController.swift */; };
 		7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C40201D34860051411F /* SettingsViewController.swift */; };
-		CAFBF16B201D74A7006B290C /* MessageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFBF16A201D74A7006B290C /* MessageClass.swift */; };
+		CA75306C201D8B2300FA067D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75306B201D8B2300FA067D /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		7F0F8C3C201D33E20051411F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7F0F8C3E201D34650051411F /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7F0F8C40201D34860051411F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		CAFBF16A201D74A7006B290C /* MessageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageClass.swift; sourceTree = "<group>"; };
+		CA75306B201D8B2300FA067D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA75306C201D8B2300FA067D /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,11 +88,11 @@
 		64A21852201D040E0010ED17 = {
 			isa = PBXGroup;
 			children = (
-				CAFBF16A201D74A7006B290C /* MessageClass.swift */,
 				64A2185D201D040E0010ED17 /* SheHacks Project */,
 				64A21874201D040E0010ED17 /* SheHacks ProjectTests */,
 				64A2187F201D040E0010ED17 /* SheHacks ProjectUITests */,
 				64A2185C201D040E0010ED17 /* Products */,
+				CA75306A201D8B2300FA067D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +139,14 @@
 				64A21882201D040E0010ED17 /* Info.plist */,
 			);
 			path = "SheHacks ProjectUITests";
+			sourceTree = "<group>";
+		};
+		CA75306A201D8B2300FA067D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA75306B201D8B2300FA067D /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A21863201D040E0010ED17 /* SecondViewController.swift in Sources */,
-				CAFBF16B201D74A7006B290C /* MessageClass.swift in Sources */,
 				64A2185F201D040E0010ED17 /* AppDelegate.swift in Sources */,
 				7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */,
 				7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */,

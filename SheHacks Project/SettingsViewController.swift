@@ -12,18 +12,15 @@ import MessageUI
 
 
 
-class SettingsViewController: UIViewController {
 
+class SettingsViewController: UIViewController, MFMessageComposeViewControllerDelegate
+{
+
+
+    @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtNumber: UITextField!
+    @IBOutlet weak var txtAddress: UITextField!
     
-
-
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var numberTextField: UITextField!
-    @IBOutlet weak var nameOutput: UITextView!
-    @IBAction func addInfo(_ sender: UIButton) {
-        
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,9 +31,18 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
+
+    @IBAction func addInfo(_ sender: Any) {
+        let composeVC = MFMessageComposeViewController()
+        composeVC.body = txtName.text!
+        composeVC.recipients = [txtNumber.text!]
+        composeVC.messageComposeDelegate = self
+        
+        self.present(composeVC, animated: true, completion: nil )
+    }
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        
+    }
 
     /*
     // MARK: - Navigation
