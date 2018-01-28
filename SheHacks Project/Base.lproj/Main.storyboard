@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="HoeflerText.ttc">
             <string>HoeflerText-Black</string>
+            <string>HoeflerText-Regular</string>
         </array>
         <array key="Zapfino.ttf">
             <string>Zapfino</string>
@@ -23,7 +24,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2q-4w-QcW">
@@ -42,10 +43,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold-star-clipart-no-background-MiLL8zB9T" translatesAutoresizingMaskIntoConstraints="NO" id="Dc5-iZ-Utt">
-                                <rect key="frame" x="105" y="-30" width="164" height="346"/>
+                                <rect key="frame" x="105" y="-6" width="164" height="346"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no favorites!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-ov-vjo">
-                                <rect key="frame" x="101" y="246" width="188" height="17"/>
+                                <rect key="frame" x="101" y="270" width="188" height="17"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,20 +74,20 @@
             <objects>
                 <viewController id="YV3-5k-HyX" customClass="CheckoutViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9vr-8g-Spx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket-cart-icon-27" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-Wf-fbe">
-                                <rect key="frame" x="67" y="76" width="240" height="128"/>
+                                <rect key="frame" x="67" y="100" width="240" height="215"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-M2-efv">
-                                <rect key="frame" x="68" y="212" width="238" height="69"/>
+                                <rect key="frame" x="68" y="323" width="238" height="69"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-5w-Efv">
-                                <rect key="frame" x="45" y="488" width="284" height="48"/>
+                                <rect key="frame" x="45" y="599" width="284" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCo-0M-jl8">
                                         <rect key="frame" x="-14" y="-4" width="313" height="57"/>
@@ -128,11 +129,11 @@
             <objects>
                 <viewController id="7If-dv-DWO" customClass="ThirdViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQH-eD-U9S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="be6-9L-7oC">
-                                <rect key="frame" x="22" y="70" width="336" height="336"/>
+                                <rect key="frame" x="22" y="94" width="336" height="423"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLJ-Xf-f3E">
                                         <rect key="frame" x="0.0" y="0.0" width="336" height="168"/>
@@ -149,10 +150,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-t5-I2D">
-                                        <rect key="frame" x="0.0" y="168" width="336" height="168"/>
+                                        <rect key="frame" x="0.0" y="168" width="336" height="255"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPj-N5-kWQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="336" height="168"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="255"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -204,36 +205,208 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9x-yn-fIW">
-                                        <rect key="frame" x="20" y="58" width="156" height="177"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqj-FJ-Oqn">
+                                        <rect key="frame" x="0.0" y="-17" width="375" height="1050"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="niG-FW-8OJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZX-HL-IoZ">
-                                                <rect key="frame" x="57" y="156" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V81-zV-MA1">
+                                                <rect key="frame" x="192" y="342" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bag1" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-lg-FTN">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$19.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANU-hi-NH0">
+                                                        <rect key="frame" x="54" y="237" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Initialed Bag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG2-2E-XmS">
+                                                        <rect key="frame" x="28" y="209" width="112" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="P3x-RU-30w"/>
+                                                    <constraint firstAttribute="height" constant="269" id="skf-0r-0nX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llN-n0-pJn">
+                                                <rect key="frame" x="11" y="31" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat2" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-9s-E4P">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$19.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2S-nm-lb7">
+                                                        <rect key="frame" x="54" y="237" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="White Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqc-Oc-C07">
+                                                        <rect key="frame" x="33" y="211" width="105" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="XL4-dW-wo9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ig-2F-TaI">
+                                                <rect key="frame" x="192" y="31" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dress2" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-tl-9zN">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$24.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cE-wR-0DM">
+                                                        <rect key="frame" x="54" y="233" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="White Cover Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CA-Pk-4H4">
+                                                        <rect key="frame" x="12" y="209" width="148" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="2wn-CF-agg"/>
+                                                    <constraint firstAttribute="height" constant="269" id="eKU-eJ-gNp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qlC-an-V9S">
+                                                <rect key="frame" x="11" y="342" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bag2" translatesAutoresizingMaskIntoConstraints="NO" id="DFN-wr-jnE">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$14.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwC-Ok-58p">
+                                                        <rect key="frame" x="54" y="237" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Striped Tote Bag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a9-uO-cMh">
+                                                        <rect key="frame" x="11" y="208" width="144" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="269" id="hXQ-oN-8n3"/>
+                                                    <constraint firstAttribute="width" constant="172" id="nqq-yc-7iw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDW-j7-zuA">
+                                                <rect key="frame" x="11" y="643" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat1" translatesAutoresizingMaskIntoConstraints="NO" id="f9X-Ea-1ZA">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$19.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-fe-a6W">
+                                                        <rect key="frame" x="54" y="237" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brown Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACy-hI-pCB">
+                                                        <rect key="frame" x="33" y="211" width="105" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="kNn-ot-bMu"/>
+                                                    <constraint firstAttribute="height" constant="269" id="spm-67-0vx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-Sn-k1f">
+                                                <rect key="frame" x="192" y="643" width="172" height="269"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dress1" translatesAutoresizingMaskIntoConstraints="NO" id="aee-69-Rin">
+                                                        <rect key="frame" x="11" y="14" width="149" height="181"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$24.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxA-5Z-wan">
+                                                        <rect key="frame" x="54" y="233" width="63" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lavender Maxi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-BK-gC5">
+                                                        <rect key="frame" x="20" y="210" width="130" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="172" id="4Jl-25-IDO"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="156" id="Xpm-jE-d50"/>
-                                            <constraint firstAttribute="height" constant="177" id="yTz-0e-Wvf"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="leading" secondItem="xDW-j7-zuA" secondAttribute="leading" id="Gb8-Nb-e7k"/>
+                                            <constraint firstItem="qlC-an-V9S" firstAttribute="top" secondItem="llN-n0-pJn" secondAttribute="bottom" constant="36" id="OfO-2v-fHZ"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="bottom" secondItem="0ig-2F-TaI" secondAttribute="bottom" id="RTg-Ep-YES"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="top" secondItem="yqj-FJ-Oqn" secondAttribute="top" constant="669" id="TEC-Sa-LZP"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="top" secondItem="yqj-FJ-Oqn" secondAttribute="top" constant="61" id="VMt-cx-hKA"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="top" secondItem="xDW-j7-zuA" secondAttribute="top" id="b5w-MY-jpG"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="leading" secondItem="0ig-2F-TaI" secondAttribute="leading" id="bGN-CS-uJ5"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="top" secondItem="0ig-2F-TaI" secondAttribute="top" id="dTa-Lb-CbZ"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="bottom" secondItem="xDW-j7-zuA" secondAttribute="bottom" id="dsN-Gp-fKZ"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="leading" secondItem="qlC-an-V9S" secondAttribute="leading" id="gaw-3t-RLC"/>
+                                            <constraint firstItem="0ig-2F-TaI" firstAttribute="leading" secondItem="llN-n0-pJn" secondAttribute="trailing" constant="9" id="h3z-B3-V6U"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="top" secondItem="V81-zV-MA1" secondAttribute="bottom" constant="34" id="mOA-BU-qJo"/>
+                                            <constraint firstItem="llN-n0-pJn" firstAttribute="leading" secondItem="yqj-FJ-Oqn" secondAttribute="leading" constant="11" id="nWH-ln-LTR"/>
+                                            <constraint firstItem="o9V-Sn-k1f" firstAttribute="leading" secondItem="V81-zV-MA1" secondAttribute="leading" id="zJt-iY-SfQ"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="d9x-yn-fIW" secondAttribute="trailing" constant="210" id="1jJ-Gf-QZZ"/>
-                                    <constraint firstItem="d9x-yn-fIW" firstAttribute="leading" secondItem="rsg-go-WvW" secondAttribute="leading" constant="20" id="2je-9Z-n3q"/>
-                                    <constraint firstAttribute="bottom" secondItem="d9x-yn-fIW" secondAttribute="bottom" constant="1265" id="L8F-RL-MeM"/>
-                                    <constraint firstItem="d9x-yn-fIW" firstAttribute="top" secondItem="rsg-go-WvW" secondAttribute="top" constant="58" id="MHI-Ua-LvB"/>
+                                    <constraint firstAttribute="trailing" secondItem="yqj-FJ-Oqn" secondAttribute="trailing" id="5FR-9t-hVP"/>
+                                    <constraint firstItem="yqj-FJ-Oqn" firstAttribute="height" secondItem="rsg-go-WvW" secondAttribute="height" id="AUF-jf-N1b"/>
+                                    <constraint firstAttribute="bottom" secondItem="yqj-FJ-Oqn" secondAttribute="bottom" constant="832" id="Crv-Nk-Mc7"/>
+                                    <constraint firstItem="yqj-FJ-Oqn" firstAttribute="centerX" secondItem="rsg-go-WvW" secondAttribute="centerX" id="bkf-8e-13V"/>
+                                    <constraint firstItem="yqj-FJ-Oqn" firstAttribute="top" secondItem="rsg-go-WvW" secondAttribute="top" id="hwp-X1-O35"/>
+                                    <constraint firstItem="yqj-FJ-Oqn" firstAttribute="leading" secondItem="rsg-go-WvW" secondAttribute="leading" id="uQl-99-peV"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -248,17 +421,18 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Browse" image="glass-1" selectedImage="glass-1" id="2Qd-b4-qhx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="1050"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="435.83208395802103"/>
+            <point key="canvasLocation" x="696.79999999999995" y="776.60098522167493"/>
         </scene>
         <!--Settings-->
         <scene sceneID="El4-tb-KlE">
             <objects>
                 <viewController id="5k6-3m-gbt" customClass="SettingsViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gYc-yl-6z7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-SF-n63">
@@ -311,7 +485,7 @@
             <objects>
                 <tableViewController id="Hq5-y4-Pr3" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wvi-A2-jU3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -319,7 +493,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Q3-hq-6ea" id="Ssi-2U-ifI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -361,10 +535,16 @@
     </scenes>
     <resources>
         <image name="Image" width="225" height="225"/>
+        <image name="bag1" width="576" height="864"/>
+        <image name="bag2" width="1500" height="1283"/>
         <image name="basket-cart-icon-27" width="1200" height="1200"/>
         <image name="check-1" width="25" height="25"/>
+        <image name="dress1" width="900" height="1500"/>
+        <image name="dress2" width="667" height="1000"/>
         <image name="glass-1" width="25" height="25"/>
         <image name="gold-star-clipart-no-background-MiLL8zB9T" width="347" height="346"/>
+        <image name="hat1" width="640" height="640"/>
+        <image name="hat2" width="249" height="202"/>
         <image name="house-1" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
         <image name="url" width="551" height="833"/>
