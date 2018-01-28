@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
         <array key="HoeflerText.ttc">
             <string>HoeflerText-Black</string>
             <string>HoeflerText-BlackItalic</string>
@@ -403,10 +406,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1883"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqj-FJ-Oqn">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1883"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V81-zV-MA1">
                                                 <rect key="frame" x="192" y="366" width="172" height="269"/>
@@ -601,7 +604,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yqj-FJ-Oqn" secondAttribute="trailing" id="5FR-9t-hVP"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="height" secondItem="rsg-go-WvW" secondAttribute="height" id="AUF-jf-N1b"/>
-                                    <constraint firstAttribute="bottom" secondItem="yqj-FJ-Oqn" secondAttribute="bottom" constant="832" id="Crv-Nk-Mc7"/>
+                                    <constraint firstAttribute="bottom" secondItem="yqj-FJ-Oqn" secondAttribute="bottom" constant="200" id="Crv-Nk-Mc7"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="centerX" secondItem="rsg-go-WvW" secondAttribute="centerX" id="bkf-8e-13V"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="top" secondItem="rsg-go-WvW" secondAttribute="top" id="hwp-X1-O35"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="leading" secondItem="rsg-go-WvW" secondAttribute="leading" id="uQl-99-peV"/>
@@ -611,7 +614,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-833" id="KOs-mt-oXO"/>
+                            <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-200" id="KOs-mt-oXO"/>
                             <constraint firstItem="rsg-go-WvW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="fYI-Fr-a23"/>
                             <constraint firstAttribute="trailing" secondItem="rsg-go-WvW" secondAttribute="trailing" id="rYc-sF-dqL"/>
                             <constraint firstItem="rsg-go-WvW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yft-Wm-mDV"/>
@@ -666,7 +669,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-SF-n63">
                                 <rect key="frame" x="94" y="57" width="187" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -694,7 +697,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.92839074959064571" blue="0.92150581294692246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="c1Q-6E-rj4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="jU4-ga-TYD"/>
