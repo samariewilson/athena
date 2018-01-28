@@ -104,7 +104,7 @@
                                             <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="NBD-uK-ZiX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
                                         <rect key="frame" x="85" y="86" width="158" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
@@ -113,19 +113,6 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85626450659999997" blue="0.88160985219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="86" id="2Wb-ut-lFu"/>
-                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o8X-19-xdh" secondAttribute="trailing" constant="8" symbolic="YES" id="4oR-HX-EkT"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cCb-Nd-aDt" secondAttribute="trailing" id="Hnd-sB-7Ue"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W2c-fT-Vro" secondAttribute="trailing" id="LuP-tI-8it"/>
-                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="THy-Tf-kQt"/>
-                                    <constraint firstAttribute="bottom" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="170" id="Wzc-KT-Os8"/>
-                                    <constraint firstAttribute="bottom" secondItem="cCb-Nd-aDt" secondAttribute="bottom" constant="81" id="YkW-t9-05Z"/>
-                                    <constraint firstItem="o8X-19-xdh" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="80" id="m8b-3k-iOs"/>
-                                    <constraint firstItem="o8X-19-xdh" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="orc-dg-QnA"/>
-                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="top" secondItem="HNy-0y-RaH" secondAttribute="top" constant="88" id="ozK-aZ-jnL"/>
-                                    <constraint firstAttribute="bottom" secondItem="o8X-19-xdh" secondAttribute="bottom" constant="81" id="sLc-mc-amd"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -606,6 +593,10 @@
                                             <constraint firstItem="o9V-Sn-k1f" firstAttribute="leading" secondItem="V81-zV-MA1" secondAttribute="leading" id="zJt-iY-SfQ"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJL-Od-Hkk">
+                                        <rect key="frame" x="172" y="948" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yqj-FJ-Oqn" secondAttribute="trailing" id="5FR-9t-hVP"/>
