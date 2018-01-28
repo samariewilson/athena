@@ -21,7 +21,14 @@ class CheckoutViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func checkShowPopUp(_ sender: Any) {
+        let popOverVC2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "checkPopUpID") as! CheckPopUpViewController
+        self.addChildViewController(popOverVC2)
+        popOverVC2.view.frame = self.view.frame
+        self.view.addSubview(popOverVC2.view)
+        popOverVC2.didMove(toParentViewController: self)
+    }
+    
     /*
     // MARK: - Navigation
 

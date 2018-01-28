@@ -113,6 +113,7 @@
 				64A21860201D040E0010ED17 /* FirstViewController.swift */,
 				64A21862201D040E0010ED17 /* SecondViewController.swift */,
 				64A21864201D040E0010ED17 /* Main.storyboard */,
+				7F0F8C48201D90790051411F /* CheckPopUpViewController.swift */,
 				7F0F8C40201D34860051411F /* SettingsViewController.swift */,
 				7F0F8C3E201D34650051411F /* CheckoutViewController.swift */,
 				7F0F8C3C201D33E20051411F /* ThirdViewController.swift */,
@@ -287,6 +288,8 @@
 				64A2185F201D040E0010ED17 /* AppDelegate.swift in Sources */,
 				7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */,
 				7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */,
+				7F0F8C49201D90790051411F /* CheckPopUpViewController.swift in Sources */,
+				7F0F8C47201D82680051411F /* FavoritePopUpViewController.swift in Sources */,
 				64A21861201D040E0010ED17 /* FirstViewController.swift in Sources */,
 				7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */,
 			);
