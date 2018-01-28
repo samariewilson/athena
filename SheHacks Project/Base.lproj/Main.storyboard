@@ -78,11 +78,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNy-0y-RaH">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNy-0y-RaH">
                                 <rect key="frame" x="26" y="265" width="322" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-19-xdh">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-19-xdh">
                                         <rect key="frame" x="80" y="169" width="45" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="YES">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,8 +93,16 @@
                                             <action selector="favoritesYes:" destination="rfH-Qe-9de" eventType="touchUpInside" id="Ite-3W-R6P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                        <rect key="frame" x="86" y="88" width="150" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
                                         <rect key="frame" x="200" y="169" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="NO">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -101,38 +111,11 @@
                                             <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="NBD-uK-ZiX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
-                                        <rect key="frame" x="86" y="88" width="150" height="24"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85626450659999997" blue="0.88160985219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="86" id="2Wb-ut-lFu"/>
-                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o8X-19-xdh" secondAttribute="trailing" symbolic="YES" id="4oR-HX-EkT"/>
-                                    <constraint firstAttribute="trailing" secondItem="cCb-Nd-aDt" secondAttribute="trailing" constant="86" id="Hnd-sB-7Ue"/>
-                                    <constraint firstAttribute="trailing" secondItem="W2c-fT-Vro" secondAttribute="trailing" constant="86" id="LuP-tI-8it"/>
-                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="THy-Tf-kQt"/>
-                                    <constraint firstAttribute="bottom" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="170" id="Wzc-KT-Os8"/>
-                                    <constraint firstAttribute="bottom" secondItem="cCb-Nd-aDt" secondAttribute="bottom" constant="81" id="YkW-t9-05Z"/>
-                                    <constraint firstItem="o8X-19-xdh" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="80" id="m8b-3k-iOs"/>
-                                    <constraint firstItem="o8X-19-xdh" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="orc-dg-QnA"/>
-                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="top" secondItem="HNy-0y-RaH" secondAttribute="top" constant="88" id="ozK-aZ-jnL"/>
-                                    <constraint firstAttribute="bottom" secondItem="o8X-19-xdh" secondAttribute="bottom" constant="81" id="sLc-mc-amd"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="HNy-0y-RaH" firstAttribute="centerY" secondItem="Tnp-VD-g10" secondAttribute="centerY" id="9oE-o5-az7"/>
-                            <constraint firstItem="HNy-0y-RaH" firstAttribute="leading" secondItem="7P9-sm-UTp" secondAttribute="leading" constant="26" id="Nwu-Ux-gfw"/>
-                            <constraint firstItem="7P9-sm-UTp" firstAttribute="bottom" secondItem="HNy-0y-RaH" secondAttribute="bottom" constant="231" id="Qwh-q5-SoA"/>
-                            <constraint firstItem="7P9-sm-UTp" firstAttribute="trailing" secondItem="HNy-0y-RaH" secondAttribute="trailing" constant="27" id="m4K-uk-12Y"/>
-                            <constraint firstItem="HNy-0y-RaH" firstAttribute="top" secondItem="7P9-sm-UTp" secondAttribute="top" constant="221" id="o1q-zb-nJD"/>
-                            <constraint firstItem="HNy-0y-RaH" firstAttribute="centerX" secondItem="Tnp-VD-g10" secondAttribute="centerX" id="xce-hb-oJP"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7P9-sm-UTp"/>
                     </view>
                 </viewController>
@@ -225,11 +208,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-ic-aED">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-ic-aED">
                                 <rect key="frame" x="41" y="292" width="292" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-IX-Vwr">
-                                        <rect key="frame" x="58" y="137" width="46" height="30"/>
+                                        <rect key="frame" x="66" y="153" width="45" height="6"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="YES">
@@ -247,7 +231,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPC-If-7jh">
-                                        <rect key="frame" x="184" y="137" width="46" height="30"/>
+                                        <rect key="frame" x="173" y="145" width="36" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="NO">
@@ -262,12 +246,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="BzU-ic-aED" firstAttribute="centerY" secondItem="f58-ZQ-wem" secondAttribute="centerY" id="QdM-IP-Hxy"/>
-                            <constraint firstItem="BzU-ic-aED" firstAttribute="centerX" secondItem="f58-ZQ-wem" secondAttribute="centerX" id="n6c-jR-jiz"/>
-                            <constraint firstItem="BzU-ic-aED" firstAttribute="leading" secondItem="Pqj-AX-762" secondAttribute="leading" constant="41" id="skO-mE-JHc"/>
-                            <constraint firstItem="BzU-ic-aED" firstAttribute="top" secondItem="Pqj-AX-762" secondAttribute="top" constant="248" id="xNP-o7-S2Z"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pqj-AX-762"/>
                     </view>
                 </viewController>
