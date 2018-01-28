@@ -13,6 +13,7 @@
     <customFonts key="customFonts">
         <array key="HoeflerText.ttc">
             <string>HoeflerText-Black</string>
+            <string>HoeflerText-BlackItalic</string>
             <string>HoeflerText-Regular</string>
         </array>
         <array key="Zapfino.ttf">
@@ -48,6 +49,9 @@
                                         <state key="normal" title="Send All Items to Cart?">
                                             <color key="titleColor" red="1" green="0.24629599355327902" blue="0.59229852197013722" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="favoriteShowPopUp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dOX-2t-J1Y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,6 +69,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241378"/>
+        </scene>
+        <!--Favorite Pop Up View Controller-->
+        <scene sceneID="qwt-zd-WNX">
+            <objects>
+                <viewController storyboardIdentifier="favoritesPopUpID" id="rfH-Qe-9de" customClass="FavoritePopUpViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tnp-VD-g10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-ab-pPm">
+                                <rect key="frame" x="41" y="298" width="292" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
+                                        <rect key="frame" x="181" y="147" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="S3B-to-ssN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                        <rect key="frame" x="73" y="66" width="147" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-19-xdh">
+                                        <rect key="frame" x="55" y="147" width="52" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.85626450659999997" blue="0.88160985219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WgS-ab-pPm" firstAttribute="leading" secondItem="7P9-sm-UTp" secondAttribute="leading" constant="41" id="1C4-3G-uEG"/>
+                            <constraint firstItem="WgS-ab-pPm" firstAttribute="centerY" secondItem="Tnp-VD-g10" secondAttribute="centerY" id="S2S-k4-XAQ"/>
+                            <constraint firstItem="WgS-ab-pPm" firstAttribute="centerX" secondItem="Tnp-VD-g10" secondAttribute="centerX" id="Sqa-fF-Khk"/>
+                            <constraint firstItem="WgS-ab-pPm" firstAttribute="top" secondItem="7P9-sm-UTp" secondAttribute="top" constant="254" id="Wqg-S9-AwE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7P9-sm-UTp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fX9-g9-aNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.8" y="-703.44827586206895"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="SPR-NE-7l1">

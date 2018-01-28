@@ -18,6 +18,7 @@
 		7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3C201D33E20051411F /* ThirdViewController.swift */; };
 		7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3E201D34650051411F /* CheckoutViewController.swift */; };
 		7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C40201D34860051411F /* SettingsViewController.swift */; };
+		7F0F8C47201D82680051411F /* FavoritePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C46201D82680051411F /* FavoritePopUpViewController.swift */; };
 		CAFBF16B201D74A7006B290C /* MessageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFBF16A201D74A7006B290C /* MessageClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		7F0F8C3C201D33E20051411F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7F0F8C3E201D34650051411F /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7F0F8C40201D34860051411F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7F0F8C46201D82680051411F /* FavoritePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePopUpViewController.swift; sourceTree = "<group>"; };
 		CAFBF16A201D74A7006B290C /* MessageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		64A21852201D040E0010ED17 = {
 			isa = PBXGroup;
 			children = (
+				7F0F8C46201D82680051411F /* FavoritePopUpViewController.swift */,
 				CAFBF16A201D74A7006B290C /* MessageClass.swift */,
 				64A2185D201D040E0010ED17 /* SheHacks Project */,
 				64A21874201D040E0010ED17 /* SheHacks ProjectTests */,
@@ -279,6 +282,7 @@
 				64A2185F201D040E0010ED17 /* AppDelegate.swift in Sources */,
 				7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */,
 				7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */,
+				7F0F8C47201D82680051411F /* FavoritePopUpViewController.swift in Sources */,
 				64A21861201D040E0010ED17 /* FirstViewController.swift in Sources */,
 				7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */,
 			);
