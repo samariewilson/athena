@@ -191,12 +191,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9x-yn-fIW">
+                                        <rect key="frame" x="20" y="58" width="156" height="177"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="niG-FW-8OJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZX-HL-IoZ">
+                                                <rect key="frame" x="57" y="156" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="Xpm-jE-d50"/>
+                                            <constraint firstAttribute="height" constant="177" id="yTz-0e-Wvf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d9x-yn-fIW" secondAttribute="trailing" constant="210" id="1jJ-Gf-QZZ"/>
+                                    <constraint firstItem="d9x-yn-fIW" firstAttribute="leading" secondItem="rsg-go-WvW" secondAttribute="leading" constant="20" id="2je-9Z-n3q"/>
+                                    <constraint firstAttribute="bottom" secondItem="d9x-yn-fIW" secondAttribute="bottom" constant="1265" id="L8F-RL-MeM"/>
+                                    <constraint firstItem="d9x-yn-fIW" firstAttribute="top" secondItem="rsg-go-WvW" secondAttribute="top" constant="58" id="MHI-Ua-LvB"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.90724769520659954" green="0.99238394813617603" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-833" id="KOs-mt-oXO"/>
+                            <constraint firstItem="rsg-go-WvW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="fYI-Fr-a23"/>
+                            <constraint firstAttribute="trailing" secondItem="rsg-go-WvW" secondAttribute="trailing" id="rYc-sF-dqL"/>
+                            <constraint firstItem="rsg-go-WvW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yft-Wm-mDV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Browse" image="glass-1" selectedImage="glass-1" id="2Qd-b4-qhx"/>
