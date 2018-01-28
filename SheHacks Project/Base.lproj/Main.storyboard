@@ -431,7 +431,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90724769520659954" green="0.99238394813617603" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-833" id="KOs-mt-oXO"/>
                             <constraint firstItem="rsg-go-WvW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="fYI-Fr-a23"/>
