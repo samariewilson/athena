@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,10 +75,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket-cart-icon-27" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-Wf-fbe">
-                                <rect key="frame" x="67" y="100" width="240" height="215"/>
+                                <rect key="frame" x="59" y="90" width="240" height="225"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-M2-efv">
-                                <rect key="frame" x="68" y="323" width="238" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-M2-efv">
+                                <rect key="frame" x="359" y="392" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -85,9 +86,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-5w-Efv">
                                 <rect key="frame" x="45" y="599" width="284" height="48"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCo-0M-jl8">
-                                        <rect key="frame" x="-14" y="-4" width="313" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCo-0M-jl8">
+                                        <rect key="frame" x="-14" y="0.0" width="313" height="57"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="Proceed to Checkout?">
                                             <color key="titleColor" red="1" green="0.24629599360000001" blue="0.59229852199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -95,22 +95,42 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HCo-0M-jl8" firstAttribute="leading" secondItem="4ef-5w-Efv" secondAttribute="leading" constant="-14" id="KjJ-5R-7ry"/>
+                                    <constraint firstItem="HCo-0M-jl8" firstAttribute="top" secondItem="4ef-5w-Efv" secondAttribute="top" id="nsJ-oI-DgS"/>
+                                    <constraint firstAttribute="bottom" secondItem="HCo-0M-jl8" secondAttribute="bottom" constant="-9" id="ovJ-zh-fJG"/>
+                                    <constraint firstAttribute="trailing" secondItem="HCo-0M-jl8" secondAttribute="trailing" constant="-15" id="y3o-ai-dFW"/>
+                                </constraints>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR5-JJ-6ux">
+                                <rect key="frame" x="67" y="371" width="279" height="21"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98421768147807442" blue="0.79302488836620699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hkg-M2-efv" firstAttribute="top" secondItem="Abz-Wf-fbe" secondAttribute="bottom" constant="8" id="3T1-dE-kB7"/>
-                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="top" secondItem="cF0-NB-49o" secondAttribute="top" constant="56" id="8b4-Ht-l8H"/>
-                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="Abz-Wf-fbe" secondAttribute="trailing" constant="68" id="9op-DY-crt"/>
+                            <constraint firstItem="4ef-5w-Efv" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="45" id="2Gm-jZ-3si"/>
+                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="top" secondItem="cF0-NB-49o" secondAttribute="top" constant="46" id="7AN-HC-5rT"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="Abz-Wf-fbe" secondAttribute="trailing" constant="76" id="9op-DY-crt"/>
                             <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="4ef-5w-Efv" secondAttribute="trailing" constant="46" id="BJ3-h3-BxH"/>
                             <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="4ef-5w-Efv" secondAttribute="bottom" constant="82" id="Ejb-g0-6XE"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="eR5-JJ-6ux" secondAttribute="trailing" constant="29" id="Eos-uh-i8m"/>
+                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="59" id="KQ5-kY-k8r"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="Abz-Wf-fbe" secondAttribute="trailing" constant="76" id="Smw-H9-qhc"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="4ef-5w-Efv" secondAttribute="trailing" constant="46" id="Vok-ZH-Mfd"/>
+                            <constraint firstItem="4ef-5w-Efv" firstAttribute="top" secondItem="hkg-M2-efv" secondAttribute="bottom" constant="207" id="X3P-rW-6qJ"/>
                             <constraint firstItem="4ef-5w-Efv" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="45" id="YcA-fD-fw3"/>
                             <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="Abz-Wf-fbe" secondAttribute="bottom" constant="414" id="aF5-Sj-ZtW"/>
-                            <constraint firstItem="4ef-5w-Efv" firstAttribute="top" secondItem="hkg-M2-efv" secondAttribute="bottom" constant="207" id="bU3-7v-kRj"/>
                             <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="hkg-M2-efv" secondAttribute="bottom" constant="337" id="dqj-sF-EqZ"/>
-                            <constraint firstItem="hkg-M2-efv" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="68" id="i3P-1n-jPE"/>
-                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="67" id="nR0-yT-L6V"/>
-                            <constraint firstItem="cF0-NB-49o" firstAttribute="trailing" secondItem="hkg-M2-efv" secondAttribute="trailing" constant="69" id="zJ1-hc-T6x"/>
+                            <constraint firstItem="cF0-NB-49o" firstAttribute="bottom" secondItem="4ef-5w-Efv" secondAttribute="bottom" constant="82" id="hog-MU-7kJ"/>
+                            <constraint firstItem="eR5-JJ-6ux" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="67" id="lFt-bX-nxn"/>
+                            <constraint firstItem="hkg-M2-efv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9vr-8g-Spx" secondAttribute="leadingMargin" id="lyk-Du-HOC"/>
+                            <constraint firstItem="Abz-Wf-fbe" firstAttribute="leading" secondItem="cF0-NB-49o" secondAttribute="leading" constant="59" id="nR0-yT-L6V"/>
+                            <constraint firstItem="eR5-JJ-6ux" firstAttribute="top" secondItem="Abz-Wf-fbe" secondAttribute="bottom" constant="56" id="oqf-VO-XUh"/>
+                            <constraint firstItem="4ef-5w-Efv" firstAttribute="top" secondItem="eR5-JJ-6ux" secondAttribute="bottom" constant="207" id="uHL-yR-xhZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hkg-M2-efv" secondAttribute="trailing" id="zuN-xV-07Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cF0-NB-49o"/>
                     </view>
@@ -118,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-70-sQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.8" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="1632.8" y="-0.73891625615763545"/>
         </scene>
         <!--Home-->
         <scene sceneID="TbG-IE-5Ti">
