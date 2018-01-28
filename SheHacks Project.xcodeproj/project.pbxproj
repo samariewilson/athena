@@ -15,6 +15,7 @@
 		64A2186B201D040E0010ED17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A21869201D040E0010ED17 /* LaunchScreen.storyboard */; };
 		64A21876201D040E0010ED17 /* SheHacks_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A21875201D040E0010ED17 /* SheHacks_ProjectTests.swift */; };
 		64A21881201D040E0010ED17 /* SheHacks_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A21880201D040E0010ED17 /* SheHacks_ProjectUITests.swift */; };
+		64F0E112201DCBFA001CF8A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F0E111201DCBFA001CF8A8 /* Default-568h@2x.png */; };
 		7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3C201D33E20051411F /* ThirdViewController.swift */; };
 		7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3E201D34650051411F /* CheckoutViewController.swift */; };
 		7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C40201D34860051411F /* SettingsViewController.swift */; };
@@ -54,6 +55,8 @@
 		64A2187C201D040E0010ED17 /* SheHacks ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheHacks ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A21880201D040E0010ED17 /* SheHacks_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheHacks_ProjectUITests.swift; sourceTree = "<group>"; };
 		64A21882201D040E0010ED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F0E111201DCBFA001CF8A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		64F0E115201DCCEB001CF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F0F8C3C201D33E20051411F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7F0F8C3E201D34650051411F /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7F0F8C40201D34860051411F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		64A21852201D040E0010ED17 = {
 			isa = PBXGroup;
 			children = (
+				64F0E111201DCBFA001CF8A8 /* Default-568h@2x.png */,
 				64A2185D201D040E0010ED17 /* SheHacks Project */,
 				64A21874201D040E0010ED17 /* SheHacks ProjectTests */,
 				64A2187F201D040E0010ED17 /* SheHacks ProjectUITests */,
@@ -112,6 +116,7 @@
 		64A2185D201D040E0010ED17 /* SheHacks Project */ = {
 			isa = PBXGroup;
 			children = (
+				64F0E115201DCCEB001CF8A8 /* Info.plist */,
 				64A2185E201D040E0010ED17 /* AppDelegate.swift */,
 				64A21860201D040E0010ED17 /* FirstViewController.swift */,
 				64A21862201D040E0010ED17 /* SecondViewController.swift */,
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A2186B201D040E0010ED17 /* LaunchScreen.storyboard in Resources */,
+				64F0E112201DCBFA001CF8A8 /* Default-568h@2x.png in Resources */,
 				64A21868201D040E0010ED17 /* Assets.xcassets in Resources */,
 				64A21866201D040E0010ED17 /* Main.storyboard in Resources */,
 			);
