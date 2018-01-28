@@ -18,6 +18,8 @@
 		7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3C201D33E20051411F /* ThirdViewController.swift */; };
 		7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C3E201D34650051411F /* CheckoutViewController.swift */; };
 		7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C40201D34860051411F /* SettingsViewController.swift */; };
+		7F0F8C4B201DA40E0051411F /* CheckPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C4A201DA40E0051411F /* CheckPopUpViewController.swift */; };
+		7F0F8C4D201DA41B0051411F /* FavoritePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F8C4C201DA41B0051411F /* FavoritePopUpViewController.swift */; };
 		CA75306C201D8B2300FA067D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75306B201D8B2300FA067D /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		7F0F8C3C201D33E20051411F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7F0F8C3E201D34650051411F /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7F0F8C40201D34860051411F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7F0F8C4A201DA40E0051411F /* CheckPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPopUpViewController.swift; sourceTree = "<group>"; };
+		7F0F8C4C201DA41B0051411F /* FavoritePopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		CA75306B201D8B2300FA067D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -113,7 +117,8 @@
 				64A21860201D040E0010ED17 /* FirstViewController.swift */,
 				64A21862201D040E0010ED17 /* SecondViewController.swift */,
 				64A21864201D040E0010ED17 /* Main.storyboard */,
-				7F0F8C48201D90790051411F /* CheckPopUpViewController.swift */,
+				7F0F8C4C201DA41B0051411F /* FavoritePopUpViewController.swift */,
+				7F0F8C4A201DA40E0051411F /* CheckPopUpViewController.swift */,
 				7F0F8C40201D34860051411F /* SettingsViewController.swift */,
 				7F0F8C3E201D34650051411F /* CheckoutViewController.swift */,
 				7F0F8C3C201D33E20051411F /* ThirdViewController.swift */,
@@ -284,12 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0F8C4B201DA40E0051411F /* CheckPopUpViewController.swift in Sources */,
 				64A21863201D040E0010ED17 /* SecondViewController.swift in Sources */,
 				64A2185F201D040E0010ED17 /* AppDelegate.swift in Sources */,
 				7F0F8C3D201D33E20051411F /* ThirdViewController.swift in Sources */,
 				7F0F8C3F201D34650051411F /* CheckoutViewController.swift in Sources */,
-				7F0F8C49201D90790051411F /* CheckPopUpViewController.swift in Sources */,
-				7F0F8C47201D82680051411F /* FavoritePopUpViewController.swift in Sources */,
+				7F0F8C4D201DA41B0051411F /* FavoritePopUpViewController.swift in Sources */,
 				64A21861201D040E0010ED17 /* FirstViewController.swift in Sources */,
 				7F0F8C41201D34860051411F /* SettingsViewController.swift in Sources */,
 			);
