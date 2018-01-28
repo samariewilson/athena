@@ -27,14 +27,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2q-4w-QcW">
-                                <rect key="frame" x="45" y="480" width="284" height="48"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-T1-8UR">
+                                <rect key="frame" x="73" y="261" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You have no favorites! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ltx-MY-90a">
+                                <rect key="frame" x="76" y="124" width="235" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.74946462560000005" green="0.74440787129999997" blue="0.74866629389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gP4-7y-g5W">
+                                <rect key="frame" x="24" y="508" width="327" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cod-5E-XAt">
-                                        <rect key="frame" x="-14" y="-4" width="313" height="57"/>
+                                        <rect key="frame" x="-45" y="-5" width="416" height="133"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                         <state key="normal" title="Send All Items to Cart?">
                                             <color key="titleColor" red="1" green="0.24629599355327902" blue="0.59229852197013722" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -42,32 +55,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold-star-clipart-no-background-MiLL8zB9T" translatesAutoresizingMaskIntoConstraints="NO" id="Dc5-iZ-Utt">
-                                <rect key="frame" x="105" y="-6" width="164" height="346"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no favorites!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-ov-vjo">
-                                <rect key="frame" x="101" y="270" width="188" height="17"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94057213804854456" green="1" blue="0.87441441570993694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="Dc5-iZ-Utt" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="-50" id="8xM-xP-0wA"/>
-                            <constraint firstItem="OxL-ov-vjo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="BHI-xn-7mv"/>
-                            <constraint firstItem="OxL-ov-vjo" firstAttribute="top" secondItem="Dc5-iZ-Utt" secondAttribute="bottom" constant="-70" id="GZC-mi-k47"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="OxL-ov-vjo" secondAttribute="trailing" constant="86" id="iKP-Cj-9HZ"/>
-                            <constraint firstItem="Dc5-iZ-Utt" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="105" id="icS-g1-KdX"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Dc5-iZ-Utt" secondAttribute="trailing" constant="106" id="lMN-1L-c36"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.97108978426395931" green="0.96453769048698934" blue="0.97005537684354382" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241378"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="SPR-NE-7l1">
@@ -540,6 +536,7 @@
     </scenes>
     <resources>
         <image name="Image" width="225" height="225"/>
+        <image name="Image-1" width="2000" height="2000"/>
         <image name="bag1" width="576" height="864"/>
         <image name="bag2" width="1500" height="1283"/>
         <image name="basket-cart-icon-27" width="1200" height="1200"/>
@@ -547,7 +544,6 @@
         <image name="dress1" width="900" height="1500"/>
         <image name="dress2" width="667" height="1000"/>
         <image name="glass-1" width="25" height="25"/>
-        <image name="gold-star-clipart-no-background-MiLL8zB9T" width="347" height="346"/>
         <image name="hat1" width="640" height="640"/>
         <image name="hat2" width="249" height="202"/>
         <image name="house-1" width="25" height="25"/>
