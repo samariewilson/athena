@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController, MFMessageComposeViewControllerDe
 {
 
     @IBAction func tips(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Tips:", message: "Please enter your name and home address, and the phone number of an emergency contact. In order to immediately send a text to your emergency contact with both your name and location, press the 'Send all items to cart?' button and confirm yes. n order to immediately send a text to emergency law enforcement at 911, press the 'Proceed to checkout?' button and confirm yes.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Tips:", message: "Please enter your name and home address, and the phone number of an emergency contact. In order to immediately send a text to your emergency contact with both your name and location, press the 'Send all items to cart?' button and confirm yes. In order to immediately send a text to emergency law enforcement at 911, press the 'Proceed to checkout?' button and confirm yes.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in alert.dismiss(animated: true, completion: nil)
             
         }))
