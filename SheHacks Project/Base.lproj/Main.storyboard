@@ -166,6 +166,9 @@
                                         <state key="normal" title="Proceed to Checkout?">
                                             <color key="titleColor" red="1" green="0.24629599360000001" blue="0.59229852199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="checkShowPopUp:" destination="YV3-5k-HyX" eventType="touchUpInside" id="h1s-eV-Hxu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +216,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-70-sQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1632.8" y="-0.73891625615763545"/>
+        </scene>
+        <!--Check Pop Up View Controller-->
+        <scene sceneID="9KY-nu-JRZ">
+            <objects>
+                <viewController storyboardIdentifier="checkPopUpID" id="NEe-Ph-dOW" customClass="CheckPopUpViewController" customModule="SheHacks_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f58-ZQ-wem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-ic-aED">
+                                <rect key="frame" x="41" y="292" width="292" height="229"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-IX-Vwr">
+                                        <rect key="frame" x="58" y="137" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkYes:" destination="NEe-Ph-dOW" eventType="touchUpInside" id="HYQ-sP-x9f"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nf-VS-tDn">
+                                        <rect key="frame" x="82" y="87" width="129" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPC-If-7jh">
+                                        <rect key="frame" x="184" y="137" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkClosePopUp:" destination="NEe-Ph-dOW" eventType="touchUpInside" id="e96-vN-Hhd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.76858177149440998" blue="0.8036193433902068" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BzU-ic-aED" firstAttribute="centerY" secondItem="f58-ZQ-wem" secondAttribute="centerY" id="QdM-IP-Hxy"/>
+                            <constraint firstItem="BzU-ic-aED" firstAttribute="centerX" secondItem="f58-ZQ-wem" secondAttribute="centerX" id="n6c-jR-jiz"/>
+                            <constraint firstItem="BzU-ic-aED" firstAttribute="leading" secondItem="Pqj-AX-762" secondAttribute="leading" constant="41" id="skO-mE-JHc"/>
+                            <constraint firstItem="BzU-ic-aED" firstAttribute="top" secondItem="Pqj-AX-762" secondAttribute="top" constant="248" id="xNP-o7-S2Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pqj-AX-762"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBP-0D-6c6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2533.5999999999999" y="142.61083743842366"/>
         </scene>
         <!--Home-->
         <scene sceneID="TbG-IE-5Ti">
