@@ -22,10 +22,16 @@ class FavoritePopUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func favoritesYes(_ sender: Any) {
+        self.removeAnimate()
+        //self.view.removeFromSuperview()
+    }
+    
     @IBAction func favoritesClosePopUp(_ sender: Any) {
         self.removeAnimate()
         //self.view.removeFromSuperview()
     }
+    
     
     func showAnimate() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
