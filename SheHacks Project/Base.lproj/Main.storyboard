@@ -78,45 +78,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-ab-pPm">
-                                <rect key="frame" x="41" y="298" width="292" height="216"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNy-0y-RaH">
+                                <rect key="frame" x="26" y="265" width="322" height="282"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
-                                        <rect key="frame" x="181" y="147" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-19-xdh">
+                                        <rect key="frame" x="80" y="169" width="45" height="32"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favoritesYes:" destination="rfH-Qe-9de" eventType="touchUpInside" id="Ite-3W-R6P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
+                                        <rect key="frame" x="200" y="169" width="36" height="32"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="NO">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="S3B-to-ssN"/>
+                                            <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="NBD-uK-ZiX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
-                                        <rect key="frame" x="73" y="66" width="147" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                        <rect key="frame" x="86" y="88" width="150" height="24"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-19-xdh">
-                                        <rect key="frame" x="55" y="147" width="52" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
-                                        <state key="normal" title="YES">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85626450659999997" blue="0.88160985219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="86" id="2Wb-ut-lFu"/>
+                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o8X-19-xdh" secondAttribute="trailing" symbolic="YES" id="4oR-HX-EkT"/>
+                                    <constraint firstAttribute="trailing" secondItem="cCb-Nd-aDt" secondAttribute="trailing" constant="86" id="Hnd-sB-7Ue"/>
+                                    <constraint firstAttribute="trailing" secondItem="W2c-fT-Vro" secondAttribute="trailing" constant="86" id="LuP-tI-8it"/>
+                                    <constraint firstItem="cCb-Nd-aDt" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="THy-Tf-kQt"/>
+                                    <constraint firstAttribute="bottom" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="170" id="Wzc-KT-Os8"/>
+                                    <constraint firstAttribute="bottom" secondItem="cCb-Nd-aDt" secondAttribute="bottom" constant="81" id="YkW-t9-05Z"/>
+                                    <constraint firstItem="o8X-19-xdh" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="80" id="m8b-3k-iOs"/>
+                                    <constraint firstItem="o8X-19-xdh" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="orc-dg-QnA"/>
+                                    <constraint firstItem="W2c-fT-Vro" firstAttribute="top" secondItem="HNy-0y-RaH" secondAttribute="top" constant="88" id="ozK-aZ-jnL"/>
+                                    <constraint firstAttribute="bottom" secondItem="o8X-19-xdh" secondAttribute="bottom" constant="81" id="sLc-mc-amd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WgS-ab-pPm" firstAttribute="leading" secondItem="7P9-sm-UTp" secondAttribute="leading" constant="41" id="1C4-3G-uEG"/>
-                            <constraint firstItem="WgS-ab-pPm" firstAttribute="centerY" secondItem="Tnp-VD-g10" secondAttribute="centerY" id="S2S-k4-XAQ"/>
-                            <constraint firstItem="WgS-ab-pPm" firstAttribute="centerX" secondItem="Tnp-VD-g10" secondAttribute="centerX" id="Sqa-fF-Khk"/>
-                            <constraint firstItem="WgS-ab-pPm" firstAttribute="top" secondItem="7P9-sm-UTp" secondAttribute="top" constant="254" id="Wqg-S9-AwE"/>
+                            <constraint firstItem="HNy-0y-RaH" firstAttribute="centerY" secondItem="Tnp-VD-g10" secondAttribute="centerY" id="9oE-o5-az7"/>
+                            <constraint firstItem="HNy-0y-RaH" firstAttribute="leading" secondItem="7P9-sm-UTp" secondAttribute="leading" constant="26" id="Nwu-Ux-gfw"/>
+                            <constraint firstItem="7P9-sm-UTp" firstAttribute="bottom" secondItem="HNy-0y-RaH" secondAttribute="bottom" constant="231" id="Qwh-q5-SoA"/>
+                            <constraint firstItem="7P9-sm-UTp" firstAttribute="trailing" secondItem="HNy-0y-RaH" secondAttribute="trailing" constant="27" id="m4K-uk-12Y"/>
+                            <constraint firstItem="HNy-0y-RaH" firstAttribute="top" secondItem="7P9-sm-UTp" secondAttribute="top" constant="221" id="o1q-zb-nJD"/>
+                            <constraint firstItem="HNy-0y-RaH" firstAttribute="centerX" secondItem="Tnp-VD-g10" secondAttribute="centerX" id="xce-hb-oJP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7P9-sm-UTp"/>
                     </view>
