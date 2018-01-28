@@ -107,7 +107,7 @@
                                             <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="NBD-uK-ZiX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Are you sure?" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
                                         <rect key="frame" x="85" y="86" width="158" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
@@ -406,10 +406,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-go-WvW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1883"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqj-FJ-Oqn">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1883"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V81-zV-MA1">
                                                 <rect key="frame" x="192" y="366" width="172" height="269"/>
@@ -596,11 +596,15 @@
                                             <constraint firstItem="o9V-Sn-k1f" firstAttribute="leading" secondItem="V81-zV-MA1" secondAttribute="leading" id="zJt-iY-SfQ"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJL-Od-Hkk">
+                                        <rect key="frame" x="172" y="948" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yqj-FJ-Oqn" secondAttribute="trailing" id="5FR-9t-hVP"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="height" secondItem="rsg-go-WvW" secondAttribute="height" id="AUF-jf-N1b"/>
-                                    <constraint firstAttribute="bottom" secondItem="yqj-FJ-Oqn" secondAttribute="bottom" constant="832" id="Crv-Nk-Mc7"/>
+                                    <constraint firstAttribute="bottom" secondItem="yqj-FJ-Oqn" secondAttribute="bottom" constant="200" id="Crv-Nk-Mc7"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="centerX" secondItem="rsg-go-WvW" secondAttribute="centerX" id="bkf-8e-13V"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="top" secondItem="rsg-go-WvW" secondAttribute="top" id="hwp-X1-O35"/>
                                     <constraint firstItem="yqj-FJ-Oqn" firstAttribute="leading" secondItem="rsg-go-WvW" secondAttribute="leading" id="uQl-99-peV"/>
@@ -610,7 +614,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-833" id="KOs-mt-oXO"/>
+                            <constraint firstAttribute="bottom" secondItem="rsg-go-WvW" secondAttribute="bottom" constant="-200" id="KOs-mt-oXO"/>
                             <constraint firstItem="rsg-go-WvW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="fYI-Fr-a23"/>
                             <constraint firstAttribute="trailing" secondItem="rsg-go-WvW" secondAttribute="trailing" id="rYc-sF-dqL"/>
                             <constraint firstItem="rsg-go-WvW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yft-Wm-mDV"/>
