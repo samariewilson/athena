@@ -51,6 +51,7 @@
                                         </state>
                                         <connections>
                                             <action selector="favoriteShowPopUp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dOX-2t-J1Y"/>
+                                            <segue destination="rfH-Qe-9de" kind="push" id="Uk2-DI-96n"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -91,7 +92,7 @@
                                             <action selector="favoritesYes:" destination="rfH-Qe-9de" eventType="touchUpInside" id="Ite-3W-R6P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-Nd-aDt">
                                         <rect key="frame" x="200" y="169" width="36" height="32"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
                                         <state key="normal" title="NO">
@@ -101,8 +102,8 @@
                                             <action selector="favoritesClosePopUp:" destination="rfH-Qe-9de" eventType="touchUpInside" id="NBD-uK-ZiX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
-                                        <rect key="frame" x="86" y="88" width="150" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Are you sure?" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-fT-Vro">
+                                        <rect key="frame" x="85" y="86" width="158" height="24"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -112,8 +113,8 @@
                                 <constraints>
                                     <constraint firstItem="W2c-fT-Vro" firstAttribute="leading" secondItem="HNy-0y-RaH" secondAttribute="leading" constant="86" id="2Wb-ut-lFu"/>
                                     <constraint firstItem="cCb-Nd-aDt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o8X-19-xdh" secondAttribute="trailing" symbolic="YES" id="4oR-HX-EkT"/>
-                                    <constraint firstAttribute="trailing" secondItem="cCb-Nd-aDt" secondAttribute="trailing" constant="86" id="Hnd-sB-7Ue"/>
-                                    <constraint firstAttribute="trailing" secondItem="W2c-fT-Vro" secondAttribute="trailing" constant="86" id="LuP-tI-8it"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cCb-Nd-aDt" secondAttribute="trailing" id="Hnd-sB-7Ue"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W2c-fT-Vro" secondAttribute="trailing" id="LuP-tI-8it"/>
                                     <constraint firstItem="cCb-Nd-aDt" firstAttribute="top" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="57" id="THy-Tf-kQt"/>
                                     <constraint firstAttribute="bottom" secondItem="W2c-fT-Vro" secondAttribute="bottom" constant="170" id="Wzc-KT-Os8"/>
                                     <constraint firstAttribute="bottom" secondItem="cCb-Nd-aDt" secondAttribute="bottom" constant="81" id="YkW-t9-05Z"/>
@@ -135,10 +136,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7P9-sm-UTp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RWr-SI-jU5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fX9-g9-aNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="-703.44827586206895"/>
+            <point key="canvasLocation" x="1282.4000000000001" y="-1035.2216748768474"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="SPR-NE-7l1">
