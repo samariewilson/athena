@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Snap: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
