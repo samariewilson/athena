@@ -13,6 +13,9 @@
         <array key="HoeflerText.ttc">
             <string>HoeflerText-Black</string>
         </array>
+        <array key="Zapfino.ttf">
+            <string>Zapfino</string>
+        </array>
     </customFonts>
     <scenes>
         <!--First View Controller-->
@@ -148,14 +151,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-t5-I2D">
                                         <rect key="frame" x="0.0" y="168" width="336" height="168"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4X5-dY-WSb">
-                                                <rect key="frame" x="0.0" y="0.0" width="168" height="168"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="168" id="1kR-IN-7sQ"/>
-                                                </constraints>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPj-N5-kWQ">
-                                                <rect key="frame" x="168" y="0.0" width="168" height="168"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="168"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -164,6 +161,25 @@
                                     <constraint firstItem="RcF-t5-I2D" firstAttribute="top" secondItem="be6-9L-7oC" secondAttribute="top" constant="168" id="jRv-pE-3up"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="vG2-DN-znG">
+                                <rect key="frame" x="22" y="402" width="337" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="Nrx-b6-v0u"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="athena" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-oi-U4C">
+                                <rect key="frame" x="98" y="327" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="47"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="url" translatesAutoresizingMaskIntoConstraints="NO" id="4X5-dY-WSb">
+                                <rect key="frame" x="103" y="225" width="168" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="1kR-IN-7sQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93485396150295774" green="0.90324403199603376" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.98633061769999997" green="0.95737788580000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -313,11 +329,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="225" height="225"/>
         <image name="basket-cart-icon-27" width="1200" height="1200"/>
         <image name="check-1" width="25" height="25"/>
         <image name="glass-1" width="25" height="25"/>
         <image name="gold-star-clipart-no-background-MiLL8zB9T" width="347" height="346"/>
         <image name="house-1" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
+        <image name="url" width="551" height="833"/>
     </resources>
 </document>
