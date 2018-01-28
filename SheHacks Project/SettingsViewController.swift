@@ -7,8 +7,22 @@
 //
 
 import UIKit
+import Foundation
+import MessageUI
+
+
 
 class SettingsViewController: UIViewController {
+
+    
+
+
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var nameOutput: UITextView!
+    @IBAction func addInfo(_ sender: UIButton) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +34,8 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
