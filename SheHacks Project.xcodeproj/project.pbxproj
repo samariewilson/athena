@@ -48,7 +48,6 @@
 		64A21865201D040E0010ED17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A21867201D040E0010ED17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A2186A201D040E0010ED17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		64A2186C201D040E0010ED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A21871201D040E0010ED17 /* SheHacks ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheHacks ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A21875201D040E0010ED17 /* SheHacks_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheHacks_ProjectTests.swift; sourceTree = "<group>"; };
 		64A21877201D040E0010ED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,7 +123,6 @@
 				7F0F8C3C201D33E20051411F /* ThirdViewController.swift */,
 				64A21867201D040E0010ED17 /* Assets.xcassets */,
 				64A21869201D040E0010ED17 /* LaunchScreen.storyboard */,
-				64A2186C201D040E0010ED17 /* Info.plist */,
 			);
 			path = "SheHacks Project";
 			sourceTree = "<group>";

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Foundation
+import MessageUI
 
-class CheckPopUpViewController: UIViewController {
+class CheckPopUpViewController: UIViewController, MFMessageComposeViewControllerDelegate
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +27,19 @@ class CheckPopUpViewController: UIViewController {
     }
     
     @IBAction func checkYes(_ sender: Any) {
-        self.removeAnimate2()
+        let composeVC = MFMessageComposeViewController()
+        composeVC.body = "I am in danger and my location is 755 Commonwealth Avenue"
+        composeVC.recipients = ["911"]
+        composeVC.messageComposeDelegate = self
+
+        self.present(composeVC, animated: true, completion: nil )
+//        self.removeAnimate2()
         //self.view.removeFromSuperview()
+        
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        
     }
     
     @IBAction func checkClosePopUp(_ sender: Any) {
